@@ -1,45 +1,56 @@
-/* ===== Pink theme override — paste this at the end of static/css/index.css ===== */
+/* ===== Baby pink theme override — paste this at the end of static/css/index.css ===== */
 
-/* Author name links (currently blue) */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap');
+
+/* Author name links */
 .publication-authors a{
-  color:#b94d91 !important;
+  color:#d97fa8 !important;
 }
 .publication-authors a:hover{
-  color:#df91bb !important;
+  color:#c2578f !important;
 }
 
-/* Paper / Supplementary / Code / arXiv buttons (currently dark navy) */
+/* Paper / Supplementary / Code / arXiv buttons — pale pink bg, dark pink text */
 .button.is-dark,
 .external-link.button.is-dark{
-  background-color:#b94d91 !important;
+  background-color:#f5c9dd !important;
   border-color:transparent !important;
-  color:#fff !important;
+  color:#a8447a !important;
 }
 .button.is-dark:hover,
 .external-link.button.is-dark:hover{
-  background-color:#a83d7d !important;
+  background-color:#f0b5cf !important;
 }
 
 /* "More Works" floating button */
 .more-works-btn{
-  background-color:#b94d91 !important;
+  background-color:#f5c9dd !important;
   border-color:transparent !important;
-  color:#fff !important;
+  color:#a8447a !important;
 }
 .more-works-btn:hover{
-  background-color:#a83d7d !important;
+  background-color:#f0b5cf !important;
 }
 
 /* Scroll-to-top button */
 .scroll-to-top{
-  background-color:#b94d91 !important;
+  background-color:#f5c9dd !important;
+  color:#a8447a !important;
 }
 .scroll-to-top:hover{
-  background-color:#a83d7d !important;
+  background-color:#f0b5cf !important;
 }
 
-/* Section titles (Abstract, BibTeX, Video Presentation, etc.) */
-.title.is-1.publication-title,
+/* Main paper title — MonarchButterflyOT, baby pink aesthetic */
+.title.is-1.publication-title{
+  font-family:'Cormorant Garamond', serif !important;
+  font-weight:700 !important;
+  color:#e08fb0 !important;
+  text-shadow:0 2px 18px rgba(224,143,176,0.35);
+  letter-spacing:0.01em;
+}
+
+/* Other section titles (Abstract, BibTeX, Video Presentation, etc.) */
 .title.is-3,
 .section .title{
   color:#3a3a3a !important;
@@ -52,19 +63,18 @@
 
 /* Copy BibTeX button */
 .copy-bibtex-btn{
-  background-color:#b94d91 !important;
-  color:#fff !important;
+  background-color:#f5c9dd !important;
+  color:#a8447a !important;
   border-color:transparent !important;
 }
 .copy-bibtex-btn:hover{
-  background-color:#a83d7d !important;
+  background-color:#f0b5cf !important;
 }
 
 /* Footer links */
 footer a{
-  color:#b94d91 !important;
+  color:#d97fa8 !important;
 }
 footer a:hover{
-  color:#df91bb !important;
+  color:#c2578f !important;
 }
-
