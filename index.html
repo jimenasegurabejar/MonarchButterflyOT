@@ -1,80 +1,201 @@
-/* ===== Baby pink theme override — paste this at the end of static/css/index.css ===== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap');
+<!-- Primary Meta Tags -->
+<meta name="title" content="MonarchButterflyOT - Jimena Segura">
+<meta name="description" content="MonarchOT: Geometric Aggregation in Wasserstein Space, Fréchet Means, Curved Geometry, and the Failure of Arithmetic Averaging in Distributed Policy.">
+<meta name="keywords" content="optimal transport, Wasserstein geometry, reinforcement learning, machine learning, geometric deep learning">
+<meta name="author" content="Jimena Segura">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
 
-/* Author name links */
-.publication-authors a{
-  color:#d97fa8 !important;
-}
-.publication-authors a:hover{
-  color:#c2578f !important;
-}
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AtheneioLab">
+<meta property="og:title" content="MonarchButterflyOT">
+<meta property="og:description" content="MonarchOT: Geometric Aggregation in Wasserstein Space, Fréchet Means, Curved Geometry, and the Failure of Arithmetic Averaging in Distributed Policy.">
+<meta property="og:url" content="https://jimenasegurabejar.github.io/MonarchButterflyOT">
+<meta property="og:image" content="https://jimenasegurabejar.github.io/MonarchButterflyOT/static/images/social_preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MonarchButterflyOT - Research Preview">
+<meta property="article:author" content="Jimena Segura">
+<meta property="article:section" content="Research">
 
-/* Paper / Supplementary / Code / arXiv buttons — pale pink bg, dark pink text */
-.button.is-dark,
-.external-link.button.is-dark{
-  background-color:#f5c9dd !important;
-  border-color:transparent !important;
-  color:#a8447a !important;
-}
-.button.is-dark:hover,
-.external-link.button.is-dark:hover{
-  background-color:#f0b5cf !important;
-}
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MonarchButterflyOT">
+<meta name="twitter:description" content="MonarchOT: Geometric Aggregation in Wasserstein Space, Fréchet Means, Curved Geometry, and the Failure of Arithmetic Averaging in Distributed Policy.">
+<meta name="twitter:image" content="https://jimenasegurabejar.github.io/MonarchButterflyOT/static/images/social_preview.png">
+<meta name="twitter:image:alt" content="MonarchButterflyOT - Research Preview">
 
-/* "More Works" floating button */
-.more-works-btn{
-  background-color:#f5c9dd !important;
-  border-color:transparent !important;
-  color:#a8447a !important;
-}
-.more-works-btn:hover{
-  background-color:#f0b5cf !important;
-}
+<!-- Academic/Research Specific -->
+<meta name="citation_title" content="MonarchButterflyOT">
+<meta name="citation_author" content="Segura, Jimena">
+<meta name="citation_publication_date" content="2026">
 
-/* Scroll-to-top button */
-.scroll-to-top{
-  background-color:#f5c9dd !important;
-  color:#a8447a !important;
-}
-.scroll-to-top:hover{
-  background-color:#f0b5cf !important;
-}
+<meta name="theme-color" content="#e08fb0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-/* Main paper title — MonarchButterflyOT, baby pink aesthetic */
-.title.is-1.publication-title{
-  font-family:'Cormorant Garamond', serif !important;
-  font-weight:700 !important;
-  color:#e08fb0 !important;
-  text-shadow:0 2px 18px rgba(224,143,176,0.35);
-  letter-spacing:0.01em;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://ajax.googleapis.com">
+<link rel="preconnect" href="https://documentcloud.adobe.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-/* Other section titles (Abstract, BibTeX, Video Presentation, etc.) */
-.title.is-3,
-.section .title{
-  color:#3a3a3a !important;
-}
+<title>MonarchButterflyOT - Jimena Segura</title>
 
-/* Light gray "hero is-light" sections background tinted pale pink */
-.hero.is-light{
-  background-color:#fdf2f5 !important;
-}
+<link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+<link rel="apple-touch-icon" href="static/images/favicon.ico">
 
-/* Copy BibTeX button */
-.copy-bibtex-btn{
-  background-color:#f5c9dd !important;
-  color:#a8447a !important;
-  border-color:transparent !important;
-}
-.copy-bibtex-btn:hover{
-  background-color:#f0b5cf !important;
-}
+<link rel="stylesheet" href="static/css/bulma.min.css">
+<link rel="stylesheet" href="static/css/index.css">
 
-/* Footer links */
-footer a{
-  color:#d97fa8 !important;
-}
-footer a:hover{
-  color:#c2578f !important;
-}
+<link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
+<link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+<link rel="stylesheet" href="static/css/bulma-slider.min.css">
+<link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</noscript>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script defer src="static/js/fontawesome.all.min.js"></script>
+<script defer src="static/js/bulma-carousel.min.js"></script>
+<script defer src="static/js/bulma-slider.min.js"></script>
+<script defer src="static/js/index.js"></script>
+
+</head>
+<body>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+<i class="fas fa-chevron-up"></i>
+</button>
+
+<main id="main-content">
+<section class="hero">
+<div class="hero-body">
+<div class="container is-max-desktop">
+<div class="columns is-centered">
+<div class="column has-text-centered">
+
+<h1 class="title is-1 publication-title">MonarchButterflyOT</h1>
+
+<div class="is-size-5 publication-authors">
+<span class="author-block">
+<a href="https://jimenasegurabejar.github.io" target="_blank">Jimena Segura</a>
+</span>
+</div>
+
+<div class="column has-text-centered">
+<div class="publication-links">
+
+<span class="link-block">
+<a href="#" target="_blank"
+class="external-link button is-normal is-rounded is-dark">
+<span class="icon">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span>Paper</span>
+</a>
+</span>
+
+<span class="link-block">
+<a href="#" target="_blank"
+class="external-link button is-normal is-rounded is-dark">
+<span class="icon">
+<i class="fab fa-github"></i>
+</span>
+<span>Code</span>
+</a>
+</span>
+
+<span class="link-block">
+<a href="#" target="_blank"
+class="external-link button is-normal is-rounded is-dark">
+<span class="icon">
+<i class="ai ai-arxiv"></i>
+</span>
+<span>arXiv</span>
+</a>
+</span>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+<div class="container is-max-desktop">
+<div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
+<h2 class="title is-3">Abstract</h2>
+<div class="content has-text-justified">
+<p>
+MonarchOT: Geometric Aggregation in Wasserstein Space, Fréchet Means, Curved
+Geometry, and the Failure of Arithmetic Averaging in Distributed Policy.
+Replace this paragraph with your full abstract.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- End paper abstract -->
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+<div class="container is-max-desktop content">
+<div class="bibtex-header">
+<h2 class="title">BibTeX</h2>
+<button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+<i class="fas fa-copy"></i>
+<span class="copy-text">Copy</span>
+</button>
+</div>
+<pre id="bibtex-code"><code>@article{segura2026monarchot,
+title={MonarchButterflyOT: Geometric Aggregation in Wasserstein Space, Fréchet Means, Curved Geometry, and the Failure of Arithmetic Averaging in Distributed Policy},
+author={Segura, Jimena},
+journal={arXiv preprint},
+year={2026}
+}</code></pre>
+</div>
+</section>
+<!--End BibTex citation -->
+
+<footer class="footer">
+<div class="container">
+<div class="columns is-centered">
+<div class="column is-8">
+<div class="content">
+<p>
+This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+</main>
+
+</body>
+</html>
