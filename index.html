@@ -1,5 +1,7 @@
 /* ===== Baby pink theme override — paste this at the end of static/css/index.css ===== */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap');
+
 /* Author name links */
 .publication-authors a{
   color:#d97fa8 !important;
@@ -39,8 +41,16 @@
   background-color:#f0b5cf !important;
 }
 
-/* Section titles (Abstract, BibTeX, Video Presentation, etc.) */
-.title.is-1.publication-title,
+/* Main paper title — MonarchButterflyOT, baby pink aesthetic */
+.title.is-1.publication-title{
+  font-family:'Cormorant Garamond', serif !important;
+  font-weight:700 !important;
+  color:#e08fb0 !important;
+  text-shadow:0 2px 18px rgba(224,143,176,0.35);
+  letter-spacing:0.01em;
+}
+
+/* Other section titles (Abstract, BibTeX, Video Presentation, etc.) */
 .title.is-3,
 .section .title{
   color:#3a3a3a !important;
